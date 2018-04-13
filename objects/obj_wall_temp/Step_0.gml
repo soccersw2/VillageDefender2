@@ -26,7 +26,7 @@ x = (mouse_x div game.cellSize) * game.cellSize;
 y = (mouse_y div game.cellSize) * game.cellSize;
 
 // Set Sprite
-image_alpha = .5;
+image_alpha = .5; // alpha for cell where placement is not allowed 
 
 // PLACE WALL
 // Check for collisions
@@ -37,13 +37,14 @@ if (obj_player.wallsLeft > 0 && !place_meeting(x, y, obj_collision) && !place_me
 		(obj_player.y - obj_player.buildingRadius - buffer) <= y && (obj_player.y + obj_player.buildingRadius) >= y)
 	{
 		// Position is valid for wall placement
-		image_alpha = 1;
+		image_alpha = 1; // alpha for for cell where placement IS allowed
 
 		if (mouse_check_button(mb_left) && obj_player.stamina >= 10)
 		{
 			instance_create_layer(x, y, "Walls", obj_wall);
 			obj_player.stamina -= 10;
 			obj_player.wallsLeft--;
+			update_grid();
 		}
 	}
 } 

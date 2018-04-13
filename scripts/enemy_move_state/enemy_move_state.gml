@@ -1,15 +1,12 @@
 /// enemy_move_state
 // Get Direction
-dir = point_direction(x,y,obj_player.x,obj_player.y)
-//direction = dir; // temp direction
+dir = direction;
 
 // Get Speed
-spd = 1;
-//speed = spd // temp speed
+//spd = 1;
 
 // Get Length
-len = spd;	
-
+//len = spd;	
 
 // Get Face
 face = round(dir/45);
@@ -17,51 +14,51 @@ if (face == 8) {
 	face = 0;
 }
 
-// Get the speed variables
-hspd = lengthdir_x(len, dir);
-vspd = lengthdir_y(len, dir);
+//// Get the speed variables
+//hspd = lengthdir_x(len, dir);
+//vspd = lengthdir_y(len, dir);
 
-// Horizontal Collisions
-if (place_meeting(x+hspd, y, obj_collision) 
-			|| place_meeting(x+hspd, y, obj_player) || place_meeting(x+hspd, y, obj_wall)) {
+//// Horizontal Collisions
+//if (place_meeting(x+hspd, y, obj_collision) 
+//			|| place_meeting(x+hspd, y, obj_player) || place_meeting(x+hspd, y, obj_wall)) {
 				
-	while(!place_meeting(x+sign(hspd), y, obj_collision) 
-			&& !place_meeting(x+sign(hspd), y, obj_player) && !place_meeting(x+sign(hspd), y, obj_wall)) {
+//	while(!place_meeting(x+sign(hspd), y, obj_collision) 
+//			&& !place_meeting(x+sign(hspd), y, obj_player) && !place_meeting(x+sign(hspd), y, obj_wall)) {
 				
-		x += sign(hspd);
+//		x += sign(hspd);
 		
-	}	
-	hspd = 0;
-}
+//	}	
+//	hspd = 0;
+//}
 
-if (flash <= 0) x += hspd;
+//if (flash <= 0) x += hspd;
 
-// Vertical Collisions
-if (place_meeting(x, y+vspd, obj_collision) || place_meeting(x, y+vspd, obj_player) 
-			|| place_meeting(x, y+vspd, obj_wall)) {
+//// Vertical Collisions
+//if (place_meeting(x, y+vspd, obj_collision) || place_meeting(x, y+vspd, obj_player) 
+//			|| place_meeting(x, y+vspd, obj_wall)) {
 				
-	while(!place_meeting(x, y+sign(vspd), obj_collision) && !place_meeting(x, y+sign(vspd), obj_player) 
-			&& !place_meeting(x, y+sign(vspd), obj_wall)) {
+//	while(!place_meeting(x, y+sign(vspd), obj_collision) && !place_meeting(x, y+sign(vspd), obj_player) 
+//			&& !place_meeting(x, y+sign(vspd), obj_wall)) {
 				
-		y += sign(vspd);
+//		y += sign(vspd);
 		
-	}
-	vspd = 0;
-}
+//	}
+//	vspd = 0;
+//}
 
-if (flash <= 0) y += vspd;
+//if (flash <= 0) y += vspd;
 
 // Sprites
 // Get Direction
+image_speed = 1;
 switch(face) {
 	case 0: // RIGHT
-		sprite_index = spr_wEnemy_right;
-		image_xscale = -1;
+		//sprite_index = spr_wEnemy_right;
 		//currentAttack = spr_sAttack_right;
 		break;
 		
 	case 1: // UPRIGHT
-		sprite_index = spr_wEnemy_up;
+		//sprite_index = spr_wEnemy_right;
 		//currentAttack = spr_sAttack_up;
 		break;
 		
@@ -71,17 +68,17 @@ switch(face) {
 		break;
 		
 	case 3: // UPLEFT
-		sprite_index = spr_wEnemy_up;
+		//sprite_index = spr_wEnemy_left;
 		//currentAttack = spr_sAttack_upleft;
 		break;
 		
 	case 4: // LEFT
-		sprite_index = spr_wEnemy_left;
+		//sprite_index = spr_wEnemy_left;
 		//currentAttack = spr_sAttack_left;
 		break;
 	
 	case 5: // DOWNLEFT
-		sprite_index = spr_wEnemy_down;
+		//sprite_index = spr_wEnemy_left;
 		//currentAttack = spr_sAttack_down;
 		break;
 		
@@ -91,10 +88,9 @@ switch(face) {
 		break;
 		
 	case 7: // DOWNRIGHT
-		sprite_index = spr_wEnemy_down;
+		//sprite_index = spr_wEnemy_right;
 		//currentAttack = spr_sAttack_downright;
 		break;
 }
 
-if (len == 0) image_index = 0;
-//if (obj_player.itemEquipped != item.walls && lMouseClicked) sprite_index = currentAttack;
+//if (len == 0) image_index = 0;

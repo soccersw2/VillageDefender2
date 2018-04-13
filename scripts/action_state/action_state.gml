@@ -14,11 +14,20 @@ if (input_z)
 }
 
 // Sword Attack
-if (stamina > 1 && lMouseClicked && itemEquipped == item.sword) 
+if (stamina > 1 && lMouseClicked && itemEquipped == item.sword
+	&& (image_index == 3 || image_index == 6 || image_index == 9 || image_index == 12)) 
 {
-	instance_destroy(obj_hitbox);
-	instance_create_layer(x + lengthdir_x(game.cellSize/2, point_direction(x,y,mouse_x,mouse_y)), y + 
+	var hb = instance_create_layer(x + lengthdir_x(game.cellSize/2, point_direction(x,y,mouse_x,mouse_y)), y + 
 		lengthdir_y(game.cellSize/2, point_direction(x,y,mouse_x,mouse_y)), "Instances", obj_hitbox);
+		
+	with(hb)
+	{
+		with(instance_place(x, y, obj_enemy))
+		{
+			attack_enemy(damage);
+			
+		}
+	}
 	stamina -= 10/60;
 }
 else instance_destroy(obj_hitbox);
@@ -31,6 +40,7 @@ if (stamina < 100 && !input_run && !lMouseClicked)
 	else stamina += 20/60;
 }
 
+// Switch equipped item
 if (input_q) itemEquipped = item.sword;
 
 if (input_e) itemEquipped = item.bow;

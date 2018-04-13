@@ -1,14 +1,14 @@
 {
-    "id": "05dac399-1b07-41c6-83a3-4dc9b70d19dc",
+    "id": "458ef8e7-10e0-4f96-938b-64a218a5ead9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_collision",
+    "name": "obj_solid",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "458ef8e7-10e0-4f96-938b-64a218a5ead9",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "e911a4cf-8f1b-4898-b177-6ee3cd0969b3",
-    "visible": false
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": true
 }
