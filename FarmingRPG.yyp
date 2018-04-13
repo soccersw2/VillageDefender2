@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "4d3b98a1-0dc1-40f7-8453-6858779942fd",
+            "Value": {
+                "id": "9eccd096-d096-4afa-b307-927548a43068",
+                "resourcePath": "scripts\\stamina_regin\\stamina_regin.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4de9395d-62ce-475f-b547-308e7ad3926a",
             "Value": {
                 "id": "d87bd772-87e5-4700-86ec-6c0d783a4917",
@@ -543,10 +551,26 @@
             }
         },
         {
+            "Key": "787a4639-2b88-4cd4-a654-164a0c22d9ee",
+            "Value": {
+                "id": "1fd277b3-210a-4811-a0f7-d6189bf5d6dd",
+                "resourcePath": "views\\787a4639-2b88-4cd4-a654-164a0c22d9ee.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "792b76bd-c882-4c6e-8a12-1f25096627a4",
             "Value": {
                 "id": "b897a6de-e295-4f92-ac8f-5c600a052058",
                 "resourcePath": "scripts\\update_grid\\update_grid.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7a31be5f-27f3-415e-88f6-12a18aef2174",
+            "Value": {
+                "id": "2fee88b1-3b9d-4048-b583-ca7cf40fe9a0",
+                "resourcePath": "scripts\\wall_placement_valid\\wall_placement_valid.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -748,6 +772,14 @@
                 "id": "2f57d32c-decc-426c-8989-8ae778affcda",
                 "resourcePath": "fonts\\fnt_inv_bold\\fnt_inv_bold.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "b5fe8459-a349-4821-8c59-e350cb3064c4",
+            "Value": {
+                "id": "041389fb-7d25-4ab2-aa42-b014fbf3f46a",
+                "resourcePath": "scripts\\set_current_weapon\\set_current_weapon.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1031,6 +1063,8 @@
         "211d36d4-b604-4c9c-87cd-d0b6d9ba5f1e",
         "17ecf5b9-d139-4265-8757-feb35e725a59",
         "93e4854d-6073-47b8-b564-646505051044",
+        "4d3b98a1-0dc1-40f7-8453-6858779942fd",
+        "b5fe8459-a349-4821-8c59-e350cb3064c4",
         "3798cb08-9fa3-4647-a050-efa2b6002cae",
         "57a1dd3c-a467-4178-b508-fd5de5aca834",
         "57ddab07-5cde-42aa-8ee7-dbcea05908b9",
@@ -1038,7 +1072,8 @@
         "df624779-d26b-4bab-b7c4-4881dc030ee5",
         "4b98b095-81e3-495e-bbd9-424109db177f",
         "792b76bd-c882-4c6e-8a12-1f25096627a4",
-        "2b90a146-239f-4090-9203-2af30e31be6c"
+        "2b90a146-239f-4090-9203-2af30e31be6c",
+        "7a31be5f-27f3-415e-88f6-12a18aef2174"
     ],
     "tutorial": ""
 }

@@ -1,5 +1,6 @@
 //draw_sprite(spr_inv_bg, 0, 50, guiHeight - 100);
 
+// DRAW INVENTORY
 // Inventory keys
 draw_set_font(fnt_inv_bold);
 draw_set_color(c_black);

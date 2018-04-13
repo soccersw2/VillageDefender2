@@ -1,5 +1,9 @@
 draw_self();
 
+// Aware cicle
+//draw_circle(x, y, 200, true);
+draw_circle_color(x, y, 200, c_white, c_black, true);
+
 // Draw healthbar for x seconds after attacked
 if (hpDisplayTime > 0)
 {

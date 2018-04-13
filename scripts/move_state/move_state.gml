@@ -1,5 +1,3 @@
-
-
 /// move_state
 // Get Direction
 dir = point_direction(0, 0, xaxis, yaxis);

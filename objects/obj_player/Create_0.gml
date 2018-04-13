@@ -23,6 +23,7 @@ buildingRadius = 100; // Distance from player walls can be built
 // Weapons & Items
 itemEquipped = Item.sword;
 itemAmmo = itemDefinitions[itemEquipped, ItemProperties.amount];
+
 currentAttack = spr_sAttack_down;
 damage = 10;
 stunFlash = 5;
