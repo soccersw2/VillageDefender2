@@ -17,10 +17,10 @@ if (flash > 0)
 		shader_reset();
 		timer = 5;
 		flash--;
-		if (flash == 0) hit = false;
+		
 	}
 	else timer--;
-} 
+} else hit = false;
 
 // Aware of player, temp
 if (collision_circle(x, y, 200, obj_player, false, true))

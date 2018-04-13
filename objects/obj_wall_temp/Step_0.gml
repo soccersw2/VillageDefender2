@@ -30,8 +30,9 @@ image_alpha = .5; // alpha for cell where placement is not allowed
 
 // PLACE WALL
 // Check for collisions
-if (obj_player.wallsLeft > 0 && !place_meeting(x, y, obj_collision) && !place_meeting(x, y, obj_player) 
-		&& !place_meeting(x, y, obj_wall) && !place_meeting(x, y, obj_enemy))
+if (obj_player.inventory[Item.walls, ItemProperties.amount] > 0 && 
+		!place_meeting(x, y, obj_solid) && !place_meeting(x, y, obj_player) 
+				&& !place_meeting(x, y, obj_enemy))
 {
 	if ((obj_player.x - obj_player.buildingRadius - buffer) <= x && (obj_player.x + obj_player.buildingRadius + buffer) >= x &&
 		(obj_player.y - obj_player.buildingRadius - buffer) <= y && (obj_player.y + obj_player.buildingRadius) >= y)
@@ -43,7 +44,7 @@ if (obj_player.wallsLeft > 0 && !place_meeting(x, y, obj_collision) && !place_me
 		{
 			instance_create_layer(x, y, "Walls", obj_wall);
 			obj_player.stamina -= 10;
-			obj_player.wallsLeft--;
+			obj_player.inventory[Item.walls, ItemProperties.amount]--;
 			update_grid();
 		}
 	}
@@ -51,4 +52,4 @@ if (obj_player.wallsLeft > 0 && !place_meeting(x, y, obj_collision) && !place_me
 
 
 
-if (obj_player.itemEquipped != item.walls) instance_destroy();
+if (obj_player.itemEquipped != Item.walls) instance_destroy();

@@ -23,27 +23,27 @@ draw_sprite(spr_inv_slot, 0, 10 + (5*80), guiHeight - 90);
 
 switch (obj_player.itemEquipped)
 {
-	case item.walls:
+	case Item.walls:
 		draw_sprite(spr_inv_slot_selected, 0, 10, guiHeight - 90);
 		break;
 		
-	case item.sword:
+	case Item.sword:
 		draw_sprite(spr_inv_slot_selected, 0, 10 + (1*80), guiHeight - 90);
 		break;
 	
-	case item.bow:
+	case Item.bow:
 		draw_sprite(spr_inv_slot_selected, 0, 10 + (2*80), guiHeight - 90);
 		break;
 		
-	case item.inv1:
+	case Item.inv1:
 		draw_sprite(spr_inv_slot_selected, 0, 10 + (3*80), guiHeight - 90);
 		break;
 		
-	case item.inv2:
+	case Item.inv2:
 		draw_sprite(spr_inv_slot_selected, 0, 10 + (4*80), guiHeight - 90);
 		break;
 		
-	case item.inv3:
+	case Item.inv3:
 		draw_sprite(spr_inv_slot_selected, 0, 10 + (5*80), guiHeight - 90);
 		break;
 }
@@ -52,12 +52,12 @@ switch (obj_player.itemEquipped)
 
 // Inventory items
 draw_sprite(spr_inv_wall, 0, 15, guiHeight - 84);
-draw_sprite(spr_sword, 0, 18 + (1*80), guiHeight - 80);
+draw_sprite(spr_sword_basic, 0, 18 + (1*80), guiHeight - 80);
 
 // Walls left
 draw_set_color(c_white);
 draw_set_font(fnt_inv);
-draw_text(25, guiHeight - 70, obj_player.wallsLeft);
+draw_text(25, guiHeight - 70, obj_player.inventory[Item.walls, ItemProperties.amount]);
 
 // Enemies Left
 draw_set_color(c_white);

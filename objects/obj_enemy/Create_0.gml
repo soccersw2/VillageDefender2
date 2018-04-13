@@ -19,6 +19,9 @@ face = 0; //direction faced
 
 // State
 
+currentState = State.running;
+currentTarget = Target.obj_hub;
+
 // Hit
 hit = false;
 flash = 0;

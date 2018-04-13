@@ -1,7 +1,7 @@
 get_input();
 
 // Temp Outlines 
-if (obj_player.itemEquipped == item.walls)
+if (obj_player.itemEquipped == Item.walls)
 {	
 	//with(obj_wall_temp)
 	//{
