@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "3ce5c26b-d5d2-42a9-8803-24e0d230ef9c",
+            "Value": {
+                "id": "54ee68a2-ecc4-4bd4-8715-dce5be6a0cb1",
+                "resourcePath": "sprites\\spr_exc_mark\\spr_exc_mark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e6e1142-9c59-4d4d-a41c-e2abde6f6cff",
             "Value": {
                 "id": "0f2de589-66b9-4371-b3a8-596a1e645429",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "9977c3e7-70ea-4245-af35-5ce77e782481",
+            "Value": {
+                "id": "7bc450b6-e196-45cd-b6e1-39a6f9c4ee99",
+                "resourcePath": "views\\9977c3e7-70ea-4245-af35-5ce77e782481.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9ab16af2-fa7c-4331-aba6-6a5f6e42a4b5",
             "Value": {
                 "id": "0e30ef68-ea4e-46a0-9514-05f6a6b394ae",
@@ -706,7 +722,7 @@
             "Key": "df624779-d26b-4bab-b7c4-4881dc030ee5",
             "Value": {
                 "id": "320be78e-8fd8-463f-9697-b8ef1cf70a80",
-                "resourcePath": "scripts\\attack_enemy\\attack_enemy.yy",
+                "resourcePath": "scripts\\enemy_attacked\\enemy_attacked.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -783,6 +799,14 @@
             }
         },
         {
+            "Key": "f2d3ba88-b3fe-4860-974d-dc1bd6da326e",
+            "Value": {
+                "id": "ad2518ef-f84f-426b-9b57-d3f10c93f4f4",
+                "resourcePath": "views\\f2d3ba88-b3fe-4860-974d-dc1bd6da326e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f33e4d16-a34c-45ed-95b9-c920834b3b4a",
             "Value": {
                 "id": "ee99e83f-d5c6-4413-a624-84d739911cc2",
@@ -824,10 +848,10 @@
         }
     ],
     "script_order": [
+        "3798cb08-9fa3-4647-a050-efa2b6002cae",
         "57a1dd3c-a467-4178-b508-fd5de5aca834",
         "57ddab07-5cde-42aa-8ee7-dbcea05908b9",
         "2a40e583-af84-48a3-850e-75331a84aac1",
-        "3798cb08-9fa3-4647-a050-efa2b6002cae",
         "4b98b095-81e3-495e-bbd9-424109db177f",
         "df624779-d26b-4bab-b7c4-4881dc030ee5",
         "792b76bd-c882-4c6e-8a12-1f25096627a4",

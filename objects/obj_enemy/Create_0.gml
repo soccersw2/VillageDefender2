@@ -13,8 +13,11 @@ dir = 0; // direction
 planner = instance_create_layer(x, y, "Planners", obj_path_planner);
 planner.follower = id;
 
-state = enemy_move_state;
+// Move & sprite
+moveState = enemy_move_state;
 face = 0; //direction faced
+
+// State
 
 // Hit
 hit = false;
@@ -23,4 +26,7 @@ timer = 0;
 
 // Attack
 damage = 30;
+
+// Aware of player
+symbolTimer = -1; // temp
 

@@ -6,14 +6,18 @@ len = 0; // length
 dir = 0; // direction
 
 // Movement procedure & sprites
-state = move_state;
+moveState = move_state;
 face = 0; //direction faced
 
 // Stats
 hp = 100;
 stamina = 100;
+
 wallsLeft = 20; // # of walls available to build
 buildingRadius = 100; // Distance from player walls can be built
+
+// States
+enum state { idle, walking, running, attacking, defending }
 
 // Weapons & Items
 enum item { sword, bow, walls, inv1, inv2, inv3 }

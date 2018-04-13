@@ -96,5 +96,9 @@ switch(face) {
 		break;
 }
 
+// Idle sprite
 if (len == 0 && !lMouseClicked) image_index = 0;
+// Attacking sprite
 if (obj_player.itemEquipped == item.sword && stamina > 1 && lMouseClicked) sprite_index = currentAttack;
+
+

@@ -8,12 +8,28 @@ if (hpDisplayTime > 0)
 }
 
 // Flash animation after attacked
-if (flash > 0 && timer <= 0)
+if (flash > 0)
 {
-	flash--;
-	shader_set(sh_white);
-	draw_self();
-	shader_reset();
-	timer = 5;
+	if (timer <= 0)
+	{		
+		shader_set(sh_white);
+		draw_self();
+		shader_reset();
+		timer = 5;
+		flash--;
+		if (flash == 0) hit = false;
+	}
+	else timer--;
 } 
-else timer--;
+
+// Aware of player, temp
+if (collision_circle(x, y, 200, obj_player, false, true))
+{
+	// temp
+	if (symbolTimer == -1) symbolTimer = 120;
+	if (symbolTimer > 0) 
+	{
+		draw_sprite(spr_exc_mark, 0, x, y - 16);
+		symbolTimer--;
+	}
+}
