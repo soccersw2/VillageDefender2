@@ -7,13 +7,15 @@ y = (mouse_y div game.cellSize) * game.cellSize;
 
 
 // Set Sprite
-image_alpha = .5; // alpha for cell where placement is not allowed 
+image_alpha = .2; // alpha for cell where placement is not allowed 
+image_index = 0; // invalid sprite image
 
 // PLACE WALL
 if (wall_placement_valid())
 {
 	// Position is valid for wall placement
 	image_alpha = 1; // alpha for for cell where placement IS allowed
+	image_index = 1; // valid sprite image
 
 	if (mouse_check_button(mb_left) && obj_player.stamina >= 10)
 	{

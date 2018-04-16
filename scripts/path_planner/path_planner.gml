@@ -1,6 +1,11 @@
 /// @desc Path planner
 /// @param target	Destination of path to create
 
+// TEMP update removed walls
+instance_destroy(obj_grid);
+instance_create_layer(x, y, "Instances", obj_grid);
+
+
 var target = argument0;
 	
 var target_x = (target.x div game.cellSize)*game.cellSize+23;

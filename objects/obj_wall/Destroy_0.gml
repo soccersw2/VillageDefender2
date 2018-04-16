@@ -1,1 +1,1 @@
-mp_grid_destroy(id);	
+mp_grid_clear_cell(id, x, y);

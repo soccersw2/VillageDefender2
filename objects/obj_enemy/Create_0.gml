@@ -1,12 +1,11 @@
 // HP
 hp = 100;
-hpDisplayTime = 0;
 
 // Movement
 spd = 1;
 
 // State
-//currentState = State.running;
+currentState = State.attacking;
 currentTarget = obj_hub;
 
 // Sprite
@@ -15,13 +14,14 @@ currentAttack = spr_sAttack_down;
 // Hit
 hit = false;
 flash = 0;
-timer = 0;
+timeBtwnFlashes = 0;
 
 // Attack
-damage = 30;
+damage = 10;
+timeBtwnAttacks = 0;
 
 // Aware of player
-symbolTimer = -1; // temp
+displaySymbolTimer = -1; // display symbol for x/60 seconds
 
 // Path
 path = path_add();

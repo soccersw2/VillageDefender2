@@ -1,8 +1,8 @@
+// Reset variables
+path_speed = spd; // Reset path speed 
+
 // Set correct sprite
 enemy_set_sprite();
-
-
-
 
 ///AI
 //(path.path_index != -1) if path started
@@ -10,8 +10,6 @@ var spot_dir = point_direction(x,y,obj_player.x,obj_player.y) //view line check 
 var target= collision_line(x,y,x+lengthdir_x(detectRadius,spot_dir)
 							,y+lengthdir_y(detectRadius,spot_dir),obj_player,true,true) //checks for player
 var pathValid = false; // If there is a valid path and path started
-
-path_speed = spd; // Reset path speed 
 	
 // If player in radius, follow player
 if instance_exists(target) 
@@ -31,9 +29,20 @@ if (!pathValid)
 // Attack player
 if (distance_to_object(currentTarget) <= 12)
 {
+	currentState = State.attacking;
+	
 	path_speed = 0;
 	sprite_index = currentAttack;
 	
-	enemy_attack (obj_player);
+	if (timeBtwnAttacks <= 0) 
+	{
+		do_attack(currentTarget);
+		timeBtwnAttacks = 60;
+	}
+	else if (timeBtwnAttacks > 0) timeBtwnAttacks--;
+}
+else 
+{
+	currentState = State.running;
 }
 

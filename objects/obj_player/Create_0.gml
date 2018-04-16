@@ -28,6 +28,11 @@ currentAttack = spr_sAttack_down;
 damage = 10;
 stunFlash = 5;
 
+// Hit
+hit = false;
+flash = 0;
+timeBtwnFlashes = 0;
+
 // Movement sprite macros
 #macro RIGHT spr_walking_right
 #macro DOWNRIGHT spr_walking_downright
