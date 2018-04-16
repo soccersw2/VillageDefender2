@@ -62,7 +62,15 @@ draw_text(25, guiHeight - 70, obj_player.inventory[Item.walls, ItemProperties.am
 
 // Enemies Left
 draw_set_color(c_white);
-draw_set_halign(fa_center);
+draw_set_halign(fa_left);
 draw_set_font(fnt_inv_bold);
-draw_text(guiWidth/2, 30, "Enemies Left: " + string(enemiesLeftAlive));
-
+if (intermissionActive)
+{
+	draw_text(guiWidth/2, 30, "Next wave starts in: ");
+	draw_text(guiWidth/2 + 50, 60, string(intermissionTimeLeft/room_speed));
+}
+else
+{
+	draw_text(guiWidth/2, 30, "Enemies Left: ");
+	draw_text(guiWidth/2 + 50, 60, string(enemiesLeftAlive));
+}
