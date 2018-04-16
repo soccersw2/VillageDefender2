@@ -23,7 +23,7 @@ get_face();
 // Get the speed variables
 if (hit)
 {
-	// hspd and vspd stay the same
+	// recoil 
 	hspd = lengthdir_x(2, hitBy.direction);
 	vspd = lengthdir_y(2, hitBy.direction);
 }

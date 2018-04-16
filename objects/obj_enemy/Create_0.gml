@@ -19,6 +19,7 @@ timeBtwnFlashes = 0;
 
 // Attack
 damage = 10;
+makeFlash = 5;
 timeBtwnAttacks = 0;
 
 // Aware of player

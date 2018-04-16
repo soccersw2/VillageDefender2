@@ -1,3 +1,3 @@
 draw_self();
 
-flash_object();
+flash_object(sh_white);

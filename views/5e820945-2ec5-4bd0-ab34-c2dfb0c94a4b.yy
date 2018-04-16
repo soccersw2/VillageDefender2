@@ -15,6 +15,7 @@
         "0d459e11-11b2-446d-82f9-08a47d90e4c2",
         "adfb88a4-de25-433f-8ca0-d5acf84460d8",
         "3ce5c26b-d5d2-42a9-8803-24e0d230ef9c",
+        "0d3dc330-07b2-4c83-9fa3-5c32625bf594",
         "fc4cee12-40fe-48d9-be0c-7dbb1d173e24"
     ],
     "filterType": "GMSprite",

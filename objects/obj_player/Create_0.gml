@@ -32,6 +32,7 @@ stunFlash = 5;
 hit = false;
 hitBy = noone;
 flash = 0;
+makeFlash = 10;
 timeBtwnFlashes = 0;
 
 

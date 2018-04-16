@@ -1,7 +1,7 @@
 draw_self();
 
 // Flash when hit
-flash_object();
+flash_object(sh_white);
 
 // Display healthbar
 if (displayHpTime > 0)

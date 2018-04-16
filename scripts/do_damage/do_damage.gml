@@ -7,7 +7,7 @@ var target = argument0;
 with(target)
 {
 	hp -= other.damage;
-	flash = 5;
+	flash = other.makeFlash;
 	timeBtwnFlashes = 5;
 	hit = true;
 	hitBy = other;

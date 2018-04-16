@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0d3dc330-07b2-4c83-9fa3-5c32625bf594",
+            "Value": {
+                "id": "6ad4e3b6-bd36-415d-8162-bccf41e3bcf2",
+                "resourcePath": "sprites\\spr_atk_mark\\spr_atk_mark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d459e11-11b2-446d-82f9-08a47d90e4c2",
             "Value": {
                 "id": "8b6f3460-70fc-467d-a84f-bc57456d77ea",
@@ -324,14 +332,6 @@
                 "id": "0dbcdf04-c168-43e1-b1ea-f6ac7a47de49",
                 "resourcePath": "sprites\\spr_sAttack_right\\spr_sAttack_right.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "4a8a92c4-8e6c-444b-a28e-9446a759e62e",
-            "Value": {
-                "id": "b940eed2-c7c7-4424-95d3-0cde74fad3e7",
-                "resourcePath": "objects\\obj_hb_enemy\\obj_hb_enemy.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -644,6 +644,14 @@
                 "id": "2599f332-2b4f-43a3-9f36-57b93a90a310",
                 "resourcePath": "scripts\\do_attack\\do_attack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "89946961-7b03-462f-859c-ab8ba45d6826",
+            "Value": {
+                "id": "f4753a38-4b42-450d-9178-27e9abfc5895",
+                "resourcePath": "shaders\\sh_red\\sh_red.yy",
+                "resourceType": "GMShader"
             }
         },
         {
