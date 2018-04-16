@@ -13,6 +13,7 @@ currentAttack = spr_sAttack_down;
 
 // Hit
 hit = false;
+hitBy = noone;
 flash = 0;
 timeBtwnFlashes = 0;
 

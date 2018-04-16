@@ -10,4 +10,5 @@ with(target)
 	flash = 5;
 	timeBtwnFlashes = 5;
 	hit = true;
+	hitBy = other;
 }

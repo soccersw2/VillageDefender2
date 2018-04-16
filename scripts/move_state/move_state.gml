@@ -21,8 +21,17 @@ if (xaxis == 0) && (yaxis == 0) {
 get_face();
 
 // Get the speed variables
-hspd = lengthdir_x(len, dir);
-vspd = lengthdir_y(len, dir);
+if (hit)
+{
+	// hspd and vspd stay the same
+	hspd = lengthdir_x(2, hitBy.direction);
+	vspd = lengthdir_y(2, hitBy.direction);
+}
+else
+{
+	hspd = lengthdir_x(len, dir);
+	vspd = lengthdir_y(len, dir);
+}
 
 // Horizontal Collisions
 if (place_meeting(x+hspd, y, obj_solid)) {	

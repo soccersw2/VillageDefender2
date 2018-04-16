@@ -30,8 +30,10 @@ stunFlash = 5;
 
 // Hit
 hit = false;
+hitBy = noone;
 flash = 0;
 timeBtwnFlashes = 0;
+
 
 // Movement sprite macros
 #macro RIGHT spr_walking_right
