@@ -1,0 +1,28 @@
+PLAYER
+- add bow & arrow
+- add defense
+- health & potion pickups
+- variable attack damage
+- stamina balance
+- momentum movement
+
+INVENTORY
+- clean up inventory system
+- combine weapon and inventory items
+
+ENEMY
+- fix shaders
+- animations
+- add damage icon animations
+
+FRIENDLY AI
+- add friendly ai (resource like walls)
+
+SHOP
+- add shop during intermission
+
+MAP
+- fix layout
+
+MENU
+- add menu

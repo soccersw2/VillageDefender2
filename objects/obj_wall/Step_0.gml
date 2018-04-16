@@ -1,5 +1,11 @@
 get_input(); // Get keyboard input
 
+// If not hp, destroy
+if (hp <= 0) 
+{
+	instance_destroy();
+}
+
 // Health regineration after spawn
 if (hpReginTime > 0 && hp < 100)
 {
@@ -10,3 +16,4 @@ if (hpReginTime > 0 && hp < 100)
 // If right clicked when walls are active, destroy wall
 if (place_meeting(x, y, obj_wall_temp) && mouse_check_button(mb_right)) instance_destroy();
 // If health is 0 (or below), destroy wall
+

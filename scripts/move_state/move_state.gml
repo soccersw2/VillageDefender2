@@ -6,7 +6,7 @@ dir = point_direction(0, 0, xaxis, yaxis);
 if (input_run && stamina > 1)
 {
 	spd = 2.5;
-	stamina -= 20/60;
+	stamina -= 10/60;
 }
 else spd = 1.5;
 

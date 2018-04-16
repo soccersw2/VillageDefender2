@@ -7,7 +7,8 @@ instance_create_layer(x, y, "Instances", obj_grid);
 
 
 var target = argument0;
-	
+if (!instance_exists(target)) return false;
+
 var target_x = (target.x div game.cellSize)*game.cellSize+23;
 var target_y = (target.y div game.cellSize)*game.cellSize+23;
 	

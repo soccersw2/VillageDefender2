@@ -34,6 +34,13 @@ else
 	if (!pathValid)
 		currentTarget = instance_nearest(x, y, obj_wall)
 		pathValid = path_planner(currentTarget);
+	
+	// If still no path
+	if (!pathValid)
+	{
+		path_end();
+		speed = 0;
+	}
 
 	// Attack player
 	if (distance_to_object(currentTarget) <= 12)

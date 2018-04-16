@@ -21,7 +21,7 @@ if (collision_circle(x, y, detectRadius, obj_player, false, true))
 {
 	// temp
 	if (displaySymbolTimer == -1) displaySymbolTimer = 120;
-	if (displaySymbolTimer > 0) 
+	if (displaySymbolTimer >= 0) 
 	{
 		draw_sprite(spr_exc_mark, 0, x, y - 16);
 		displaySymbolTimer--;

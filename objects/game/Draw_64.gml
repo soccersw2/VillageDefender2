@@ -54,11 +54,14 @@ switch (obj_player.itemEquipped)
 // Inventory items
 draw_sprite(spr_inv_wall, 0, 15, guiHeight - 84);
 draw_sprite(spr_sword_basic, 0, 18 + (1*80), guiHeight - 80);
+draw_sprite(spr_bow_basic, 0, 18 + (2*80), guiHeight - 80);
+draw_sprite(spr_potion_hp, 0, 18 + (3*80), guiHeight - 80);
+
 
 // Walls left
 draw_set_color(c_white);
 draw_set_font(fnt_inv);
-draw_text(25, guiHeight - 70, obj_player.inventory[Item.walls, ItemProperties.amount]);
+draw_text(15, guiHeight - 70, obj_player.inventory[Item.walls, ItemProperties.amount]);
 
 // Enemies Left
 draw_set_color(c_white);
