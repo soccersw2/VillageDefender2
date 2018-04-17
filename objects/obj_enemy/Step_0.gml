@@ -6,7 +6,7 @@ enemy_set_sprite();
 
 ///AI
 //(path.path_index != -1) if path started
-var spot_dir = point_direction(x,y,obj_player.x,obj_player.y) //view line check direction
+var spot_dir = point_direction(x,y,obj_player.x,obj_player.y) //view line check directions
 var target= collision_line(x,y,x+lengthdir_x(detectRadius,spot_dir)
 							,y+lengthdir_y(detectRadius,spot_dir),obj_player,true,true) //checks for player
 var pathValid = false; // If there is a valid path and path started
