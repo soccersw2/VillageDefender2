@@ -21,19 +21,25 @@ if (hit)
 else
 {
 	// If player in radius, follow player
-	if instance_exists(target) 
-		currentTarget = obj_player;
+	if (target != noone)
+	{
+		currentTarget = instance_nearest(x, y, obj_player);
 		pathValid = path_planner(currentTarget);
+	}
 
 	// If player not in radius or no path to player, follow hub
-	if (!instance_exists(target) || !pathValid)
-		currentTarget = obj_hub;
+	if (target == noone || !pathValid)
+	{
+		currentTarget = instance_nearest(x, y, obj_hub);
 		pathValid = path_planner(currentTarget);
+	}
 
 	// If no path to player or hub, follow wall
 	if (!pathValid)
-		currentTarget = instance_nearest(x, y, obj_wall)
+	{
+		currentTarget = instance_nearest(x, y, obj_wall);
 		pathValid = path_planner(currentTarget);
+	}
 	
 	// If still no path
 	if (!pathValid)

@@ -10,3 +10,5 @@ global.grid = mp_grid_create(0,0, hcells, vcells, cell_width, cell_height);
 // Add the walls
 mp_grid_add_instances(global.grid, obj_wall, true);
 mp_grid_add_instances(global.grid, obj_collision, true);
+mp_grid_add_instances(global.grid, obj_door, true);
+mp_grid_add_instances(global.grid, obj_hub, true);

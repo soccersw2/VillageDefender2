@@ -6,7 +6,7 @@ spd = 1;
 
 // State
 currentState = State.attacking;
-currentTarget = obj_hub;
+currentTarget = obj_hub.id;
 
 // Sprite
 currentAttack = spr_sAttack_down;
