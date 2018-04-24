@@ -27,6 +27,15 @@ itemEquipped = Item.sword;
 itemAmmo = itemDefinitions[itemEquipped, ItemProperties.amount];
 
 // Attacking
+rMouseDefenseActive = false;
+lMouseAttackActive = false;
+rMouseDefenseTimeActive = 0;
+lMouseAttackTimeActive = 0;
+projectileRange = 0;
+
+rMouseDefenseTimePrev = 0;
+lMouseAttackTimePrev = 0;
+
 // sword
 currentAttack = spr_sAttack_down;
 damage = 10;
@@ -35,8 +44,8 @@ stunFlash = 5;
 // bow and arrow
 playerDirection = "DOWN"; // direction string
 rangeSprite = spr_bow_range;
-
-
+cooldown = 2 * 60;
+currentCooldown = 0;
 
 // Hit
 hit = false;
