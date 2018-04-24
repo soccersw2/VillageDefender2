@@ -63,41 +63,49 @@ y += vspd;
 // Get Direction
 switch(face) {
 	case 0: // RIGHT
+		playerDirection = "RIGHT";
 		sprite_index = RIGHT;
 		currentAttack = spr_sAttack_right;
 		break;
 		
 	case 1: // UPRIGHT
+		playerDirection = "UPRIGHT";
 		sprite_index = UPRIGHT;
 		currentAttack = spr_sAttack_up;
 		break;
 		
 	case 2: // UP
+		playerDirection = "UP";
 		sprite_index = UP;
 		currentAttack = spr_sAttack_up;
 		break;
 		
 	case 3: // UPLEFT
+		playerDirection = "UPLEFT";
 		sprite_index = UPLEFT;
 		currentAttack = spr_sAttack_upleft;
 		break;
 		
 	case 4: // LEFT
+		playerDirection = "LEFT";
 		sprite_index = LEFT;
 		currentAttack = spr_sAttack_left;
 		break;
 	
 	case 5: // DOWNLEFT
+		playerDirection = "DOWNLEFT";
 		sprite_index = DOWNLEFT;
 		currentAttack = spr_sAttack_downleft;
 		break;
 		
 	case 6: // DOWN
+		playerDirection = "DOWN";
 		sprite_index = DOWN;
 		currentAttack = spr_sAttack_down;
 		break;
 		
 	case 7: // DOWNRIGHT
+		playerDirection = "DOWNRIGHT";
 		sprite_index = DOWNRIGHT;
 		currentAttack = spr_sAttack_downright;
 		break;

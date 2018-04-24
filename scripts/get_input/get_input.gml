@@ -23,7 +23,53 @@ input_3 = keyboard_check_pressed(ord("3")); // inventory slot 3
 input_4 = keyboard_check_pressed(ord("4")); // inventory slot 4
 input_5 = keyboard_check_pressed(ord("5"));  // inventory slot 5
 
-
+// x & y axis
 xaxis = (input_right - input_left);
 yaxis = (input_down - input_up);
 
+////////////////////////////////////////
+// Left Mouse Button Pressed - Attack //
+////////////////////////////////////////
+if(lMousePressed)					// attack initiated (1st click)
+{
+	lMouseAttackActive = true;
+	lMouseAttackTimeActive = 1;
+}
+else if (lMouseReleased)			// attack finished
+{
+	lMouseAttackActive = false;
+	lMouseAttackTimeActive = 0;	// reset timer
+}
+else if (lMouseClicked && lMouseAttackActive)  
+{									// still attacking
+	lMouseAttackTimeActive++;	// increment timer
+}
+else // redundant check to make sure values are reset
+{
+	lMouseAttackActive = false;	
+	lMouseAttackTimeActive = 0; 
+}
+
+
+/////////////////////////////////////////
+// Right Mouse Button Pressed - Defend //
+////////////////////////////////////////
+if(rMousePressed)					// defense initiated (1st click)
+{
+	rMouseAttackActive = true;
+	rMouseAttackTimeActive = 1;
+}
+else if (rMouseReleased)			// defense finished
+{
+	rMouseAttackActive = false;
+	rMouseAttackTimeActive = 0;	// reset timer
+}
+else if (rMouseClicked && rMouseAttackActive)  
+{									// still defending
+	rMouseAttackTimeActive++;	// increment timer
+}
+else // redundant check to make sure values are reset
+{
+	rMouseAttackActive = false;	
+	rMouseAttackTimeActive = 0; 
+}

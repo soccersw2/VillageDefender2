@@ -9,6 +9,8 @@ vspd = 0; // vertical speed
 len = 0; // length
 dir = 0; // direction
 
+
+
 // Movement procedure & sprites
 moveState = move_state;
 face = 0; //direction faced
@@ -24,9 +26,17 @@ buildingRadius = 100; // Distance from player walls can be built
 itemEquipped = Item.sword;
 itemAmmo = itemDefinitions[itemEquipped, ItemProperties.amount];
 
+// Attacking
+// sword
 currentAttack = spr_sAttack_down;
 damage = 10;
 stunFlash = 5;
+
+// bow and arrow
+playerDirection = "DOWN"; // direction string
+rangeSprite = spr_bow_range;
+
+
 
 // Hit
 hit = false;
