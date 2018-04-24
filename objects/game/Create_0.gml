@@ -16,5 +16,5 @@ spawnTimer = 0;
 intermissionActive = false;
 intermissionTimeLeft = 0;
 
-#macro INTERMISSION_TIME 5
-#macro NUM_INITIAL_ENEMIES 1
+#macro INTERMISSION_TIME 10
+#macro NUM_INITIAL_ENEMIES 5

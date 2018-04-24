@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0822568e-0075-4a2d-85b6-9ed7359740c6",
+            "Value": {
+                "id": "3b1069f8-fea8-498a-9870-86c6cb391a5f",
+                "resourcePath": "sprites\\spr_pickup_pot_perk\\spr_pickup_pot_perk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0ad039bc-6c9e-4491-abf6-fc76577466c7",
             "Value": {
                 "id": "0dc7b40f-3d08-4619-a80e-fc506d2db3ec",
@@ -323,6 +331,14 @@
             "Value": {
                 "id": "0dbcdf04-c168-43e1-b1ea-f6ac7a47de49",
                 "resourcePath": "sprites\\spr_sAttack_right\\spr_sAttack_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "490366e7-d669-4324-8e0a-28e7743d55ab",
+            "Value": {
+                "id": "0478c8c6-ee4e-44c1-af2b-8fd4483544d0",
+                "resourcePath": "sprites\\spr_pot_perk\\spr_pot_perk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -631,6 +647,14 @@
             }
         },
         {
+            "Key": "85579574-6e85-46af-9f38-d2780f9d446f",
+            "Value": {
+                "id": "f1bf1375-8783-4b1d-a8db-7d77c8a15166",
+                "resourcePath": "fonts\\fnt_inv_ammo\\fnt_inv_ammo.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "87e66b5b-92ec-47fa-9594-ef01e310154c",
             "Value": {
                 "id": "fe9b6184-adb7-4b04-ae7a-e31b697c115e",
@@ -791,6 +815,14 @@
             }
         },
         {
+            "Key": "ad681754-7100-4f63-b68e-e582ac6139f8",
+            "Value": {
+                "id": "45e7a54d-1fa8-4ef7-841a-88d2236c2921",
+                "resourcePath": "sprites\\spr_pickup_pot_hp\\spr_pickup_pot_hp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "adfb88a4-de25-433f-8ca0-d5acf84460d8",
             "Value": {
                 "id": "ac83ad3a-078b-4e5c-8ef2-af56719fe076",
@@ -890,7 +922,15 @@
             "Key": "be730483-f4ec-451b-af93-32ae8a5be3f0",
             "Value": {
                 "id": "07666913-3791-49cc-b60c-fc9e41883898",
-                "resourcePath": "sprites\\spr_potion_hp\\spr_potion_hp.yy",
+                "resourcePath": "sprites\\spr_pot_hp\\spr_pot_hp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bf836e28-0409-4895-9da7-f06e0b500981",
+            "Value": {
+                "id": "1d33ac3d-1074-4699-b4e6-cda184e9dcb5",
+                "resourcePath": "sprites\\spr_pot_stamina\\spr_pot_stamina.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1122,7 +1162,7 @@
             "Key": "f894aa0c-22dc-4947-bafc-715c0e507969",
             "Value": {
                 "id": "f80dd2e9-5826-4c34-8d3e-b46442a4e6da",
-                "resourcePath": "sprites\\spr_potion\\spr_potion.yy",
+                "resourcePath": "sprites\\spr_pickup_pot_stamina\\spr_pickup_pot_stamina.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1151,12 +1191,12 @@
         "211d36d4-b604-4c9c-87cd-d0b6d9ba5f1e",
         "17ecf5b9-d139-4265-8757-feb35e725a59",
         "93e4854d-6073-47b8-b564-646505051044",
-        "4d3b98a1-0dc1-40f7-8453-6858779942fd",
-        "b5fe8459-a349-4821-8c59-e350cb3064c4",
         "3798cb08-9fa3-4647-a050-efa2b6002cae",
         "57a1dd3c-a467-4178-b508-fd5de5aca834",
         "57ddab07-5cde-42aa-8ee7-dbcea05908b9",
         "2a40e583-af84-48a3-850e-75331a84aac1",
+        "4d3b98a1-0dc1-40f7-8453-6858779942fd",
+        "b5fe8459-a349-4821-8c59-e350cb3064c4",
         "88fb6419-581e-4635-bf37-f6285dae0b04",
         "80e911b9-0ff3-4121-80aa-853d5b6efd80",
         "4b98b095-81e3-495e-bbd9-424109db177f",
