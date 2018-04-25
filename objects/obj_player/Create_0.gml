@@ -18,6 +18,7 @@ face = 0; //direction faced
 // Stats
 hp = 100;
 stamina = 100;
+coins = 100;
 
 // Walls
 buildingRadius = 100; // Distance from player walls can be built
@@ -44,7 +45,7 @@ stunFlash = 5;
 // bow and arrow
 playerDirection = "DOWN"; // direction string
 rangeSprite = spr_bow_range;
-cooldown = 2 * 60;
+cooldown = 1.5 * 60;
 currentCooldown = 0;
 
 // Hit

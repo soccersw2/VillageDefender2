@@ -4,7 +4,7 @@
 // TEMP update removed walls
 instance_destroy(obj_grid);
 instance_create_layer(x, y, "Instances", obj_grid);
-
+if(!currentTarget == inst_56F9A717) mp_grid_add_instances(global.grid, obj_hub, true);
 
 var target = argument0;
 //if (!instance_exists(target)) return false;

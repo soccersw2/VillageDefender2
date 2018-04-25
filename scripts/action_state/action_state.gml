@@ -19,11 +19,11 @@ if (itemEquipped == Item.sword && lMouseAttackActive
 }
 
 
-if(rMouseDefenseActive)
-{	
-	stamina -= 5/60;
-	//spriteStretchSpeed = (lMouseAttackTimeActive / (20 - (lMouseAttackTimeActive*.1)))
-}
+//if(rMouseDefenseActive)
+//{	
+//	stamina -= 5/60;
+//	//spriteStretchSpeed = (lMouseAttackTimeActive / (20 - (lMouseAttackTimeActive*.1)))
+//}
 
 
 

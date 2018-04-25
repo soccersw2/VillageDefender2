@@ -1,3 +1,6 @@
+// Update array with previous weapon
+inventory[itemEquipped, ItemProperties.amount] = itemAmmo;
+
 // Walls active
 if (input_z) 
 {
@@ -11,10 +14,16 @@ if (input_z)
 	else 
 	{
 		itemEquipped = Item.sword;
-		itemAmmo = inventory[Item.sword, ItemProperties.amount];
+		itemAmmo = inventory[itemEquipped, ItemProperties.amount];
 		instance_destroy(obj_wall_temp);
 	}
 }
+
+//if (input_z) 
+//{
+//	itemEquipped = Item.walls;
+//	itemAmmo = inventory[itemEquipped, ItemProperties.amount];
+//}
 
 // Switch equipped item
 if (input_q) 

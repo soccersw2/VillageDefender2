@@ -23,6 +23,8 @@ input_3 = keyboard_check_pressed(ord("3")); // inventory slot 3
 input_4 = keyboard_check_pressed(ord("4")); // inventory slot 4
 input_5 = keyboard_check_pressed(ord("5"));  // inventory slot 5
 
+input_b = keyboard_check_pressed(ord("B"));  // open shop
+
 // x & y axis
 xaxis = (input_right - input_left);
 yaxis = (input_down - input_up);
