@@ -17,5 +17,7 @@ for(var i=0; i<5; i++) {
 		ownedArray[i, j] = -1;
 	}
 }
+tierLevel = array_create(5, 1);
+
 currentCategory = ShopCategory.length; // means nothing is selected
 

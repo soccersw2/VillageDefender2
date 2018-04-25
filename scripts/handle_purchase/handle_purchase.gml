@@ -1,7 +1,7 @@
 /// @desc handle_purchase()
-/// @param array  categoryArray with tiers of selected item
+/// @param array  nextTierAvailable 
 
-var array = argument0;
+var upgrade = argument0;
 //var index = argument1;
 
 //obj_player.itemAmmo++;
@@ -9,12 +9,26 @@ var array = argument0;
 switch(currentCategory)
 {
 	case ShopCategory.bows:
-		// Upgrade player item bow attributes 
+		if(upgrade)
+		{
+			//UPGRADE STATS
+			//if(obj_player.inventory[Item.bow, ItemProperties.amount] 
+			//	< obj_player.inventory[Item.bow, ItemProperties.maxAmount])
+			//{
+			//	obj_player.inventory[Item.bow, ItemProperties.amount] += 1;
+			//	obj_player.coins -= itemCost;
+			//}
+		}
+		
 		
 		break;
 		
 	case ShopCategory.arrows:
-		if(obj_player.inventory[Item.bow, ItemProperties.amount] 
+		if(upgrade)
+		{
+			//UPGRADE STATS
+		}
+		else if(obj_player.inventory[Item.bow, ItemProperties.amount] 
 			< obj_player.inventory[Item.bow, ItemProperties.maxAmount])
 		{
 			obj_player.inventory[Item.bow, ItemProperties.amount] += 1;
@@ -23,12 +37,19 @@ switch(currentCategory)
 		break;
 		
 	case ShopCategory.swords:
-		// Upgrade player item sword attributes 
 		
+		if(upgrade)
+		{
+			//UPGRADE STATS
+		}
 		break;
 		
 	case ShopCategory.walls:
-		if(obj_player.inventory[Item.walls, ItemProperties.amount] 
+		if(upgrade)
+		{
+			//UPGRADE STATS
+		}
+		else if(obj_player.inventory[Item.walls, ItemProperties.amount] 
 			< obj_player.inventory[Item.walls, ItemProperties.maxAmount])
 		{
 			obj_player.inventory[Item.walls, ItemProperties.amount] += 1;

@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "7385a9f1-8090-4774-bce3-5df2f36fc4a4",
+            "Value": {
+                "id": "dda13bdc-0f01-4e91-83a5-cb974e631c20",
+                "resourcePath": "fonts\\fnt_shop_small\\fnt_shop_small.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "73afb3e0-a62a-4544-b267-78ca627f56d9",
             "Value": {
                 "id": "cf4dde8a-fca5-4270-9a02-b2cd6563dbe6",
@@ -1060,6 +1068,14 @@
                 "id": "1d33ac3d-1074-4699-b4e6-cda184e9dcb5",
                 "resourcePath": "sprites\\spr_pot_stamina\\spr_pot_stamina.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c1ed746a-0534-480d-a44a-e4fdfe1d1733",
+            "Value": {
+                "id": "5768e6bc-48c2-4389-9766-b85d2835068f",
+                "resourcePath": "views\\c1ed746a-0534-480d-a44a-e4fdfe1d1733.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

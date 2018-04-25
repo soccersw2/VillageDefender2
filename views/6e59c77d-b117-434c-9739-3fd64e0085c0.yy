@@ -11,7 +11,7 @@
         "e89b659c-0736-4695-9c02-445c05b44f2c"
     ],
     "filterType": "GMScript",
-    "folderName": "Prop Item Defs",
+    "folderName": "Shop Item Add",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

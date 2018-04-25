@@ -28,11 +28,8 @@ draw_set_font(fnt_shop);
 draw_set_halign(fa_left);
 draw_set_color(c_white);
 
-/*----------ITEM1----------*/
 if(!hidden)
 {
-	
-	
 	for(var j = 0; j < rows; j++)
 	{
 		
@@ -40,13 +37,20 @@ if(!hidden)
 		for(var i = 0; i < columns; i++)
 			{
 				var locked = false;
+				var nextTierAvailable = false;
 				
 				rowArray = get_empty_definitions();
 				itemName = "N/A";
-				itemCost = 0;
+				itemCost = -1;
 				itemSprite = spr_empty;
 				currentCategory = ShopCategory.length;
 				itemType = -1;
+				itemHP = -1;
+				itemDamage = -1;
+				itemSpeed = -1;
+				itemStamina = -1;
+				itemRange = -1;
+				
 		
 				switch(j)
 				{
@@ -56,7 +60,10 @@ if(!hidden)
 						itemName = wallsArray[i, WallProp.name];
 						itemCost = wallsArray[i, WallProp.cost];
 						itemSprite = wallsArray[i, WallProp.sprite];
-						if (i > 0) locked = true;
+						itemHP = wallsArray[i, WallProp.hp];
+						
+						if (i == tierLevel[0]) nextTierAvailable = true;  
+						if (i >= tierLevel[0]) locked = true;
 						break;
 					case 1:
 						rowArray = swordsArray;
@@ -64,8 +71,12 @@ if(!hidden)
 						itemName = swordsArray[i, SwordProp.name];
 						itemCost = swordsArray[i, SwordProp.cost];
 						itemSprite = swordsArray[i, SwordProp.sprite];
-						//if (i > 2) locked = true;
-						locked = true;
+						itemDamage = swordsArray[i, SwordProp.damage];
+						itemSpeed = swordsArray[i, SwordProp.spd];
+						itemStamina = swordsArray[i, SwordProp.staminaCost];
+						
+						if (i == tierLevel[1]) nextTierAvailable = true;  
+						if (i >= tierLevel[1]) locked = true; 
 						break;
 					case 2:
 						currentCategory = ShopCategory.bows;
@@ -73,18 +84,28 @@ if(!hidden)
 						itemName = bowsArray[i, BowProp.name];
 						itemCost = bowsArray[i, BowProp.cost];
 						itemSprite = bowsArray[i, BowProp.sprite];
-						//if (i > 2) locked = true;
-						locked = true;
+						
+						itemSpeed = bowsArray[i, BowProp.spd];
+						itemStamina = bowsArray[i, BowProp.staminaCost];
+						itemRange = bowsArray[i, BowProp.range];
+						
+						if (i == tierLevel[2]) nextTierAvailable = true;  
+						if (i >= tierLevel[2]) locked = true;
+						
 						break;
 						
 					case 3:
 						currentCategory = ShopCategory.arrows;
 						rowArray = arrowsArray;
-						itemName = arrowsArray[i, ArrowProp.name];
+						itemName = arrowsArray[i, ArrowProp.name];						
 						itemCost = arrowsArray[i, ArrowProp.cost];
 						itemSprite = arrowsArray[i, ArrowProp.sprite];
-						//if (i > 0) locked = true;
-						locked = true;
+						itemDamage = arrowsArray[i, ArrowProp.damage];
+						
+						if (i == tierLevel[3]) nextTierAvailable = true;  
+						if (i >= tierLevel[3]) locked = true;
+						
+						
 						break;
 						
 					case 4:
@@ -93,7 +114,7 @@ if(!hidden)
 						itemName = potionsArray[i, PotionProp.name];
 						itemCost = potionsArray[i, PotionProp.cost];
 						itemSprite = potionsArray[i, PotionProp.sprite];
-						itemType = potionsArray[i, PotionProp.type];	
+						itemType = potionsArray[i, PotionProp.type];
 						break;
 				}
 				
@@ -106,22 +127,22 @@ if(!hidden)
 				var textColor = c_white;
 				var fillBox = false;
 				
-				if (mouse_over(x+(i*rectWidth), y+(j*rectHeight), rectWidth, rectHeight) && !locked)
-				//if (mouse_over(rectX+(i*rectWidth), rectY+(j*rectHeight), 
-				//						rectX+((i+1)*rectWidth), (rectY+((j+1)*rectHeight)) - (rectY+(j*rectHeight))))
+				if(locked) fillColor = c_gray;
+				if(nextTierAvailable) fillColor = c_orange;
+				
+				if (mouse_over(x+(i*rectWidth), y+(j*rectHeight), rectWidth, rectHeight) && 
+								(!locked || nextTierAvailable))
 				{
-					//textColor = c_red;
 					if (obj_player.coins >= itemCost)
 					{	
-						if (ownedArray[currentCategory, i] != 0)
-							{
-							textColor = c_lime;
-							fillColor = c_lime;
-							if(lMousePressed)
-							{
-								handle_purchase(rowArray);			
-							}
-						}											
+
+						textColor = c_lime;
+						fillColor = c_lime;
+						if(lMousePressed)
+						{
+							handle_purchase(nextTierAvailable);			
+						}
+											
 					}
 					else
 					{
@@ -134,7 +155,7 @@ if(!hidden)
 				{
 					lockedColor = c_ltgray;
 					textColor = c_ltgray;
-					curAlpha = lockedAlpha;
+					if(!nextTierAvailable) curAlpha = lockedAlpha;
 				}
 
 				else 	
@@ -143,7 +164,7 @@ if(!hidden)
 				}															
 				
 				
-				
+				draw_set_font(fnt_shop);
 				draw_set_color(textColor);
 				draw_sprite_ext(itemSprite, 0, textBuffer+rectX+(i*rectWidth)+rectWidth/2, 
 										textBuffer+textSpacing+rectY+(j*rectHeight)+10,
@@ -157,11 +178,23 @@ if(!hidden)
 										textBuffer+textSpacing+rectY+(j*rectHeight)+10,
 										1, 1, 0, c_white, 1);
 										
-				if(locked) fillColor = c_gray;
+				
 				draw_set_color(fillColor);
 				draw_rectangle_color(rectX+(i*rectWidth), rectY+(j*rectHeight), 
 					rectX+((i+1)*rectWidth), rectY+((j+1)*rectHeight), 
 					fillColor, fillColor, fillColor, fillColor, true);	
+				
+				
+				
+				// Additional item category info
+				//enum ShopCategory { walls, swords, bows, arrows, potions, length }
+				draw_set_color(textColor);
+				draw_set_font(fnt_shop_small);
+				if(j=ShopCategory.walls)
+				{
+					draw_text_colour(textBuffer+rectX+(i*rectWidth), 2*(textBuffer+textSpacing)+rectY+(j*rectHeight), 
+					"HP: " + string(itemHP), textColor, textColor, textColor, textColor, curAlpha);
+				}
 			}	
 	}
 }
