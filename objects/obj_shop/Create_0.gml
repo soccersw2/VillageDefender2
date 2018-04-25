@@ -8,3 +8,6 @@ hidden = true;
 
 wallsArray = get_wall_definitions();
 swordsArray = get_sword_definitions();
+bowsArray = get_bow_definitions();
+arrowsArray = get_arrow_definitions();
+potionsArray = get_potion_definitions();

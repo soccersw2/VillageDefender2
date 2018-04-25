@@ -21,3 +21,4 @@ swordDefinitions[_slot, SwordProp.cost]		= _cost;
 swordDefinitions[_slot, SwordProp.damage]		= _damage;
 swordDefinitions[_slot, SwordProp.spd]		= _spd;
 swordDefinitions[_slot, SwordProp.staminaCost]		= _staminaCost;
+

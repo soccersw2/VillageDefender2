@@ -28,5 +28,5 @@ waveLootCoins = irandom_range(coinLootMin, coinLootMax);
 intermissionActive = false;
 intermissionTimeLeft = 0;
 
-#macro INTERMISSION_TIME 10
+#macro INTERMISSION_TIME 30
 #macro NUM_INITIAL_ENEMIES 1

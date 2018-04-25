@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "1e00ee57-8ad0-41c1-9681-1358682b77c6",
+            "Value": {
+                "id": "975a8bd4-af75-47f7-8aed-7b748abaf622",
+                "resourcePath": "scripts\\get_bow_definitions\\get_bow_definitions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1e8f7250-01bd-4426-af49-9d5ba48af030",
             "Value": {
                 "id": "0e9d7e6e-a965-4601-ab8a-de0a05d48ff5",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "32e7d979-8369-4888-b804-d28e91581b74",
+            "Value": {
+                "id": "b59a9c80-f1ee-449d-bea7-b573bc01325c",
+                "resourcePath": "scripts\\get_potion_definitions\\get_potion_definitions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3798cb08-9fa3-4647-a050-efa2b6002cae",
             "Value": {
                 "id": "272764d3-e651-4c8b-832f-4240b5906327",
@@ -292,6 +308,14 @@
                 "id": "0f2de589-66b9-4371-b3a8-596a1e645429",
                 "resourcePath": "sprites\\spr_inv_bg\\spr_inv_bg.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4190caa7-6ec9-43a6-bdb4-5aef908b4079",
+            "Value": {
+                "id": "96913dec-0657-4168-81b2-d1d0d257f474",
+                "resourcePath": "scripts\\get_arrow_definitions\\get_arrow_definitions.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -652,6 +676,14 @@
                 "id": "f2784f1c-f879-459d-acc7-11094652e7ea",
                 "resourcePath": "views\\7c408efe-35a9-4902-bc94-ac61c9bdea37.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d4d3a4f-80fa-48a3-9a29-a930e9dda633",
+            "Value": {
+                "id": "7b217788-cf3b-4529-b83b-7b368fcec049",
+                "resourcePath": "scripts\\add_arrow_definition\\add_arrow_definition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1103,6 +1135,14 @@
             }
         },
         {
+            "Key": "d257af92-2ebf-4145-a059-aaf151a5415a",
+            "Value": {
+                "id": "0913e2c4-d8c6-4662-9086-23119cd53c24",
+                "resourcePath": "scripts\\add_bow_definition\\add_bow_definition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d3f77ed3-0a38-4d4c-b1a3-80472ec5ef3a",
             "Value": {
                 "id": "c59dc194-3675-41f6-b600-756a57b5120a",
@@ -1204,6 +1244,14 @@
                 "id": "b7371a37-6c56-4675-a028-5c3cae68d36d",
                 "resourcePath": "datafiles_yy\\Game Boy Advance - Boktai 2 Solar Boy Django - Django Sword.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "e89b659c-0736-4695-9c02-445c05b44f2c",
+            "Value": {
+                "id": "882f6937-f859-43c9-ba8a-d42830402a2e",
+                "resourcePath": "scripts\\add_potion_definition\\add_potion_definition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1321,9 +1369,15 @@
         "a71e36b0-0ac8-4841-9843-eea928e345ee",
         "d4667ace-cb59-4fc3-8430-8c8e2c76945b",
         "47dd7353-69f3-41c9-9a22-c21050acc0f6",
+        "1e00ee57-8ad0-41c1-9681-1358682b77c6",
+        "4190caa7-6ec9-43a6-bdb4-5aef908b4079",
+        "32e7d979-8369-4888-b804-d28e91581b74",
         "d6e2d6e2-4aa1-4da4-b658-6416a042ead1",
         "680ad1f0-9d89-424f-9d81-31bcb1f2a7af",
         "f5cbf4a5-e5b2-45e2-931b-ed1d582c1b61",
+        "d257af92-2ebf-4145-a059-aaf151a5415a",
+        "7d4d3a4f-80fa-48a3-9a29-a930e9dda633",
+        "e89b659c-0736-4695-9c02-445c05b44f2c",
         "3798cb08-9fa3-4647-a050-efa2b6002cae",
         "57a1dd3c-a467-4178-b508-fd5de5aca834",
         "57ddab07-5cde-42aa-8ee7-dbcea05908b9",
