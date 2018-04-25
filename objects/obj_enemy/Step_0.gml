@@ -32,7 +32,7 @@ else
 	{
 		currentTarget = inst_56F9A717;
 		pathValid = path_planner(currentTarget);
-		if (!pathValid) show_message("path not valid");
+		//if (!pathValid) show_message("path not valid");
 	}
 
 	// If no path to player or hub, follow wall
