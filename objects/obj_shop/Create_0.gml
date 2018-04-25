@@ -11,3 +11,11 @@ swordsArray = get_sword_definitions();
 bowsArray = get_bow_definitions();
 arrowsArray = get_arrow_definitions();
 potionsArray = get_potion_definitions();
+
+for(var i=0; i<5; i++) {
+	for(var j=0; j<3; j++) {
+		ownedArray[i, j] = -1;
+	}
+}
+currentCategory = ShopCategory.length; // means nothing is selected
+
