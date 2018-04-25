@@ -6,6 +6,5 @@ buffer = 125;
 alpha = 1;
 hidden = true;
 
-item1 = 100;
-item2 = 200;
-item3 = 300;
+wallsArray = get_wall_definitions();
+swordsArray = get_sword_definitions();

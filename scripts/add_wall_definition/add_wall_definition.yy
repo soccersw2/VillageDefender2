@@ -1,8 +1,8 @@
 {
-    "id": "a45da4fd-3e6e-4ef8-beba-8c20cd61097c",
+    "id": "680ad1f0-9d89-424f-9d81-31bcb1f2a7af",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "use_empty",
+    "name": "add_wall_definition",
     "IsCompatibility": false,
     "IsDnD": false
 }
