@@ -44,8 +44,9 @@ if(!hidden)
 				rowArray = get_empty_definitions();
 				itemName = "N/A";
 				itemCost = 0;
-				itemSprite = spr_wall;
+				itemSprite = spr_empty;
 				currentCategory = ShopCategory.length;
+				itemType = -1;
 		
 				switch(j)
 				{
@@ -55,7 +56,7 @@ if(!hidden)
 						itemName = wallsArray[i, WallProp.name];
 						itemCost = wallsArray[i, WallProp.cost];
 						itemSprite = wallsArray[i, WallProp.sprite];
-						//if (i > 2) locked = true;
+						if (i > 0) locked = true;
 						break;
 					case 1:
 						rowArray = swordsArray;
@@ -64,6 +65,7 @@ if(!hidden)
 						itemCost = swordsArray[i, SwordProp.cost];
 						itemSprite = swordsArray[i, SwordProp.sprite];
 						//if (i > 2) locked = true;
+						locked = true;
 						break;
 					case 2:
 						currentCategory = ShopCategory.bows;
@@ -72,6 +74,7 @@ if(!hidden)
 						itemCost = bowsArray[i, BowProp.cost];
 						itemSprite = bowsArray[i, BowProp.sprite];
 						//if (i > 2) locked = true;
+						locked = true;
 						break;
 						
 					case 3:
@@ -81,6 +84,7 @@ if(!hidden)
 						itemCost = arrowsArray[i, ArrowProp.cost];
 						itemSprite = arrowsArray[i, ArrowProp.sprite];
 						//if (i > 0) locked = true;
+						locked = true;
 						break;
 						
 					case 4:
@@ -89,7 +93,7 @@ if(!hidden)
 						itemName = potionsArray[i, PotionProp.name];
 						itemCost = potionsArray[i, PotionProp.cost];
 						itemSprite = potionsArray[i, PotionProp.sprite];
-						if (i > 0) locked = true;
+						itemType = potionsArray[i, PotionProp.type];	
 						break;
 				}
 				
@@ -153,6 +157,7 @@ if(!hidden)
 										textBuffer+textSpacing+rectY+(j*rectHeight)+10,
 										1, 1, 0, c_white, 1);
 										
+				if(locked) fillColor = c_gray;
 				draw_set_color(fillColor);
 				draw_rectangle_color(rectX+(i*rectWidth), rectY+(j*rectHeight), 
 					rectX+((i+1)*rectWidth), rectY+((j+1)*rectHeight), 

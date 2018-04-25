@@ -4,26 +4,72 @@
 var array = argument0;
 //var index = argument1;
 
-obj_player.itemAmmo++;
-obj_player.coins -= itemCost;
-
+//obj_player.itemAmmo++;
+//obj_player.coins -= itemCost;
 switch(currentCategory)
 {
 	case ShopCategory.bows:
+		// Upgrade player item bow attributes 
 		
 		break;
+		
 	case ShopCategory.arrows:
-		obj_player.inventory[Item.bow, ItemProperties.amount] += 1;
+		if(obj_player.inventory[Item.bow, ItemProperties.amount] 
+			< obj_player.inventory[Item.bow, ItemProperties.maxAmount])
+		{
+			obj_player.inventory[Item.bow, ItemProperties.amount] += 1;
+			obj_player.coins -= itemCost;
+		}
+		break;
+		
+	case ShopCategory.swords:
+		// Upgrade player item sword attributes 
 		
 		break;
-	case ShopCategory.swords:
-		ownedArray[currentCategory, i] = 0;
-		break;
+		
 	case ShopCategory.walls:
-		obj_player.inventory[Item.walls, ItemProperties.amount] += 1;
+		if(obj_player.inventory[Item.walls, ItemProperties.amount] 
+			< obj_player.inventory[Item.walls, ItemProperties.maxAmount])
+		{
+			obj_player.inventory[Item.walls, ItemProperties.amount] += 1;
+			obj_player.coins -= itemCost;
+		}
+		
 		break;
+		
 	case ShopCategory.potions:
-		ownedArray[currentCategory, i] = 0;
+		switch(itemType)
+		{
+			case 1:	//hp
+				if(obj_player.inventory[Item.inv1, ItemProperties.amount] 
+					< obj_player.inventory[Item.inv1, ItemProperties.maxAmount])
+				{
+					obj_player.inventory[Item.inv1, ItemProperties.amount] += 1;
+					obj_player.coins -= itemCost;
+				}
+				break;
+				
+			case 2:	//stamina
+				if(obj_player.inventory[Item.inv2, ItemProperties.amount] 
+					< obj_player.inventory[Item.inv2, ItemProperties.maxAmount])
+				{
+					obj_player.inventory[Item.inv2, ItemProperties.amount] += 1;
+					obj_player.coins -= itemCost;
+				}
+				break;
+				
+			case 3:	//perk
+				if(obj_player.inventory[Item.inv3, ItemProperties.amount] 
+					< obj_player.inventory[Item.inv3, ItemProperties.maxAmount])
+				{
+					obj_player.inventory[Item.inv3, ItemProperties.amount] += 1;
+					obj_player.coins -= itemCost;
+				}
+				break;
+				
+			default:
+				break;
+		}
+		
 		break;
-
 }

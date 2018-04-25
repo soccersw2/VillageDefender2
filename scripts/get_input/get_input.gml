@@ -1,4 +1,5 @@
 /// @desc get_input()
+
 input_right = max(keyboard_check(vk_right), keyboard_check(ord("D")), 0);
 input_left = max(keyboard_check(vk_left), keyboard_check(ord("A")), 0);
 input_down = max(keyboard_check(vk_down), keyboard_check(ord("S")), 0);
@@ -29,5 +30,6 @@ input_enter = keyboard_check_pressed(vk_enter); // skip intermission
 // x & y axis
 xaxis = (input_right - input_left);
 yaxis = (input_down - input_up);
+
 
 
