@@ -24,6 +24,7 @@ input_4 = keyboard_check_pressed(ord("4")); // inventory slot 4
 input_5 = keyboard_check_pressed(ord("5"));  // inventory slot 5
 
 input_b = keyboard_check_pressed(ord("B"));  // open shop
+input_enter = keyboard_check_pressed(vk_enter); // skip intermission
 
 // x & y axis
 xaxis = (input_right - input_left);

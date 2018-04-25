@@ -19,6 +19,7 @@ face = 0; //direction faced
 hp = 100;
 stamina = 100;
 coins = 100;
+xp = 0;
 
 // Walls
 buildingRadius = 100; // Distance from player walls can be built

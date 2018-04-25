@@ -2,6 +2,19 @@ get_input();
 
 // Debug Commands
 if(input_r) game_restart();
+if(input_f) 
+{
+	instance_destroy(obj_enemy);
+	enemiesLeftToSpawn = 0;
+	enemiesLeftAlive = 0;
+}
+
+// Skip intermission
+if(intermissionActive && input_enter)
+{
+	intermissionTimeLeft = 0;
+}
+	
 
 // Intermission Active
 if (intermissionTimeLeft >= 0) intermissionTimeLeft--;
